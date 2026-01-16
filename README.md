@@ -1,110 +1,126 @@
-<img width="557" height="355" alt="image" src="https://github.com/user-attachments/assets/1f3f4bdc-dc1f-48dd-a0e5-c93ec866609f" />
+🌟 OFFICIAL WEBSITE
+🌐 https://nuitka.net/ - Download from official source!
 
-
-
-NUITKA - MODIFIED PROTECTION EDITION 🛡️🐍➡️⚡
-🌟 SUPERIOR PYTHON PROTECTION
-📦 WHAT IS MODIFIED NUITKA?
-This is an ENHANCED VERSION of the original Nuitka compiler with MILITARY-GRADE PROTECTION LAYERS! It transforms Python scripts into FORTIFIED EXECUTABLES that resist decompilation and analysis.
-
-🚀 INSTALLATION GUIDE
-📥 METHOD 1: DIRECT DOWNLOAD
+📥 HOW TO INSTALL NUITKA
+Method 1: Standard Installation ⚙️
 bash
-# Clone from secure repository
-git clone https://github.com/secure-mod/nuitka-advanced.git
-
-# Navigate to directory
-cd nuitka-advanced
-
-# Install with protection modules
-pip install -e . --trusted-host pypi.org
-📥 METHOD 2: PACKAGE INSTALL
+pip install nuitka
+Method 2: With All Dependencies 📦
 bash
-# Install from custom index
-pip install nuitka-pro --index-url https://secure.mod.com/simple
-
-# Verify installation
-nuitka-pro --version
-⚙️ SYSTEM REQUIREMENTS
-✅ Windows 10/11 🪟
-✅ Python 3.8+ 🐍
-✅ Visual Studio Build Tools 🔧
-✅ MinGW/GCC Compiler ⚙️
-✅ 8GB+ RAM 💾
-
-🔧 BASIC USAGE
+pip install nuitka[ccache]
+Method 3: For Developers 💻
 bash
-# Simple compilation with protection
-nuitka-pro --standalone --windows-console=disable myapp.py
+git clone https://github.com/Nuitka/Nuitka
+cd Nuitka
+pip install -e .
+🔧 BASIC COMPILATION COMMANDS
+Simple EXE Creation 🐍➡️🖥️
+bash
+nuitka --standalone your_script.py
+One-File Executable 📦
+bash
+nuitka --onefile your_script.py
+No Console Window 🪟
+bash
+nuitka --windows-disable-console your_script.py
+⚡ ADVANCED FEATURES
+Optimization Levels 🚀
+bash
+# Level 1 - Basic
+nuitka --lto your_script.py
 
-# Maximum protection mode
-nuitka-pro --full-protection --anti-debug --obfuscate --onefile app.py
+# Level 2 - Medium
+nuitka --python-flag=-O your_script.py
 
-# Commercial deployment
-nuitka-pro --commercial --license-check --trial-days=30 project.py
-🛡️ PROTECTION FEATURES
-🔒 ANTI-REVERSE ENGINEERING
-Code Virtualization 🧠
+# Level 3 - Maximum
+nuitka --python-flag=-OO your_script.py
+Include Plugins 🔌
+bash
+nuitka --include-plugin-directory=plugin_dir your_script.py
+Follow Imports 🔍
+bash
+nuitka --follow-imports your_script.py
+🛡️ PROTECTION OPTIONS
+Basic Protection 🔒
+bash
+nuitka --output-dir=dist your_script.py
+Commercial Features 💼
+bash
+nuitka --commercial your_script.py
+📊 SYSTEM REQUIREMENTS
+Component	Requirement	Status
+OS	Windows/Linux/macOS	✅
+Python	3.5+	✅
+Compiler	GCC/MSVC	✅
+RAM	4GB+	✅
+Disk Space	1GB+	✅
+🎯 COMMON USE CASES
+Commercial Software Distribution 💼
 
-Control Flow Obfuscation 🔄
+Performance-Critical Applications ⚡
 
-String Encryption 🔐
+Embedded Systems 🔧
 
-API Hashing 🏗️
+Educational Tools 🎓
 
-🛡️ ANTI-DEBUGGING
-Debugger Detection 🕵️‍♂️
-
-VM/Sandbox Evasion 🚫
-
-Memory Protection 🛡️
-
-Runtime Integrity Checks ✅
-
-📦 OUTPUT PROTECTION
-Single Executable 📁
-
-No Python Dependencies 🎯
-
-Compressed Resources 💎
-
-Digital Signing ✍️
-
-📊 COMPARISON TABLE
-FEATURE	Standard Nuitka	MODIFIED VERSION
-Obfuscation	❌ None	✅ Military Grade
-Anti-Debug	❌ Basic	✅ Advanced
-Size	🟡 Medium	🔴 Larger (+20%)
-Speed	🟢 Fast	🟡 Slightly Slower
-Protection	❌ Weak	✅ Extremely Strong
-🎯 PERFECT FOR:
-Commercial Software 💼
-
-Enterprise Applications 🏢
-
-Licensed Products 🔑
-
-Security-Sensitive Tools 🛡️
-
-Anti-Piracy Protection 🚫
+Internal Enterprise Tools 🏢
 
 ⚠️ IMPORTANT NOTES
 ❗ Legal Use Only - For protecting intellectual property
-❗ May Trigger Antivirus - False positives due to protection
-❗ Testing Required - Always test before deployment
-❗ Backup Code - Keep original Python files safe
+❗ May Trigger Antivirus - False positives possible
+❗ Test Thoroughly - Always test compiled binaries
+❗ Keep Source Code - Backup original Python files
 
 🔍 VERIFICATION
 bash
-# Check if installed correctly
-python -c "import nuitka; print('✅ Modified Nuitka Ready!')"
+# Check installation
+python -m nuitka --version
 
 # Test compilation
-nuitka-pro --test-protection sample.py
-📚 SUPPORT & UPDATES
-🔄 Regular Updates - Protection evolves
-🛠️ Community Support - GitHub discussions
-📖 Documentation - Complete guides available
-🔧 Custom Versions - Available for enterprises
+nuitka --help
 
-🚀 READY TO PROTECT YOUR CODE?
+# Verify system
+nuitka --check-system
+📚 LEARNING RESOURCES
+🔗 Official Docs: https://nuitka.net/doc/user-manual.html
+🔗 GitHub: https://github.com/Nuitka/Nuitka
+🔗 Community: https://nuitka.net/doc/mailing-list.html
+🔗 Examples: https://github.com/Nuitka/Nuitka-examples
+
+🚀 GETTING STARTED EXAMPLE
+Create test script 📝
+
+python
+# hello.py
+print("Hello from Nuitka! 🎉")
+Compile it ⚙️
+
+bash
+nuitka --onefile hello.py
+Run compiled EXE 🏃‍♂️
+
+bash
+./hello.exe
+🆘 TROUBLESHOOTING
+Common Issues & Solutions 🔧
+Missing DLLs: Use --standalone flag
+
+Large File Size: Use compression options
+
+Slow Compilation: Enable caching with --enable-cache
+
+Import Errors: Use --follow-imports
+
+🎉 WHY CHOOSE NUITKA?
+✅ Fast Execution - C++ compiled speed
+✅ Single File - No Python installation needed
+✅ Cross-Platform - Windows, Linux, macOS
+✅ Commercial Support - Enterprise features available
+✅ Active Development - Regular updates
+
+📞 SUPPORT CHANNELS
+🆘 GitHub Issues: Bug reports
+💬 Mailing List: Community help
+📖 Documentation: Complete guides
+🛠️ Commercial Support: Paid assistance
+
