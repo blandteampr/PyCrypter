@@ -1,3 +1,4 @@
+<img width="557" height="355" alt="image" src="https://github.com/user-attachments/assets/1f3f4bdc-dc1f-48dd-a0e5-c93ec866609f" />
 Nuitka Explained! 🚀
 Nuitka is a Python-to-C compiler ✨ that translates your Python code into highly efficient C/C++ code, then compiles it into standalone executables or extension modules.
 
